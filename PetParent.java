@@ -1,6 +1,6 @@
-class PetParent 
+public abstract class PetParent 
 {
-    public String name;
+    private String name;
     public boolean hasHair;
     public String color;
     public int cuteness;//1-10, 1:ugly
@@ -14,6 +14,26 @@ class PetParent
       this.cuteness = cuteness;
       this.friendliness = friendliness;
     }
+    
+    //getters and setters
+    public String getName()
+    {
+      return name; 
+    }//end name getters
+
+    public void setName(String name)
+    {
+      this.name = name;
+    }
+    //brain method
+
+    public String dailyRoutine()
+    {
+      return name + " likes to play in the morning and eat dinner at 5:00 PM";
+    }//this got inherited
+
+    //This is an abstract method. It has no body
+    public abstract String speak();
 
     public String toString()
     {
