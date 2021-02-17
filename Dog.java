@@ -17,6 +17,11 @@ public class Dog extends PetParent
   {
     return "Bark";
   }
+
+  public String getLoyalty()
+  {
+    return this.getName() + " has a loyalty of " + this.loyalty;
+  }
   public String toString()
   {
     String output = super.toString();
