@@ -9,10 +9,19 @@ public abstract class PetParent
     public PetParent(String name, boolean hasHair, String color, int cuteness, double friendliness)
     {
       this.name = name;
-      this. hasHair = hasHair;
+      this.hasHair = hasHair;
       this.color = color;
       this.cuteness = cuteness;
       this.friendliness = friendliness;
+    }
+
+    public PetParent()
+    {
+      this.name = "";
+      this.hasHair = false;
+      this.color = "";
+      this.cuteness = -1;
+      this.friendliness = -0.01;
     }
     
     //getters and setters

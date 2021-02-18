@@ -13,17 +13,35 @@ public class Main
 
     PetParent clifford = new Axolotl("Clifford", true, "purple", 10, 0.01, false);
 
+    PetParent blob;
+    blob = matthew; //this is assigning the alias, not a copy
+    //blob = piper; //reassigned the alias
+    matthew.setRegenerate(false);
+    System.out.println(blob.toString());
+    System.out.println(blob.dailyRoutine());
+
+    /*
+    Owner emiliano = new Owner("Emiliano");
+    System.out.println(emiliano.toString()); 
+
+    System.out.println(emiliano.feed(piper));
+    System.out.println(emiliano.feed(matthew));
+    System.out.println(emiliano.feed(vader));
+    */
+
+    /*
     System.out.println(vader.dailyRoutine());
     System.out.println(vader.speak());
     System.out.println(((Dog)vader).getLoyalty());
     System.out.println(clifford.dailyRoutine());
 
     PetParent[] myPets = {piper, vader, matthew, clifford};
-    
+
     for(PetParent animals : myPets)
     {
       System.out.println(animals.getName() + " says " + animals.speak() + ".");
     }
+    */
 
     /*
     System.out.println();
